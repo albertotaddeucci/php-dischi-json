@@ -1,0 +1,42 @@
+.my_bg {
+    background-color: #222831;
+}
+
+.my_bg_nav {
+    background-color: #31363F;
+}
+
+.my_color_text {
+    color: #EEEEEE;
+}
+
+
+.my_card img {
+    width: 100%;
+}
+
+.cursor {
+    cursor: pointer;
+
+}
+
+.my_card:hover img {
+    filter: brightness(0.5);
+}
+
+
+.overlay {
+    width: 80%;
+    height: 50%;
+
+    background-color: #76abaef8;
+    font-size: 1.5em;
+    color: black;
+}
+
+
+
+.overlay .col-auto img {
+    width: 300px;
+    object-fit: contain;
+}

@@ -15,31 +15,51 @@
     <!-- axios -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <link href="./style.css" rel="stylesheet">
+
+
 </head>
 
-<body>
+<body class="my_bg">
 
     <div id="app">
 
-        <div class="container">
-            <h1>Dischi</h1>
+        <nav class="my_bg_nav p-3">
+            <div class="container">
+                <h1 class="my_color_text">PHP - Dischi</h1>
 
-            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+            </div>
 
-                <div @click="getInfo(index)" v-for="album,index in albumsList" class="card col">
-                    <img :src=" album.poster" class="card-img-top p-3" alt="...">
-                    <div class="card-body text-center ">
-                        <h4 class="card-title pb-3">{{album.title}}</h4>
+        </nav>
+        <div class="container pt-5">
 
 
-                    </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 gx-3 gy-3 position-relative ">
+
+                <div @click="getInfo(index)" v-for="album,index in albumsList" class="my_card col cursor">
+                    <img :src=" album.poster">
+
                 </div>
 
-                <div v-show="showCard == true">
+                <div v-show="showCard == true" class="rounded-4 overlay text-center position-absolute top-50 start-50 translate-middle">
 
-                    <div>Author: {{albumInfo.author}}</div>
-                    <div>Year: {{albumInfo.year}}</div>
-                    <div>Genre: {{albumInfo.genre}}</div>
+                    <div class="row w-100 h-100 align-items-center px-5 ">
+                        <div class="col-auto">
+                            <img :src=" albumInfo.poster">
+
+
+                        </div>
+                        <div class="col-auto flex-grow-1 ">
+
+                            <h4 class="card-title pb-3 fs-1 ">{{albumInfo.title}}</h4>
+                            <div><strong>Author:</strong> {{albumInfo.author}}</div>
+                            <div><strong>Year:</strong> {{albumInfo.year}}</div>
+                            <div><strong>Genre:</strong> {{albumInfo.genre}}</div>
+
+                        </div>
+
+                    </div>
+
 
                 </div>
 
