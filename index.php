@@ -20,11 +20,27 @@
 <body>
 
     <div id="app">
-        <h1>Dischi</h1>
 
-        <ul>
-            <li v-for="album in albumsList">{{album.title}}</li>
-        </ul>
+        <div class="container">
+            <h1>Dischi</h1>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+
+                <div v-for="album in albumsList" class="card col">
+                    <img :src=" album.poster" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{album.title}}</h5>
+                        <div>Author: <span>{{album.author}}</span></div>
+                        <div>Year: <span>{{album.year}}</span></div>
+                        <div>Genre: <span>{{album.genre}}</span></div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
 
     </div>
 
