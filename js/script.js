@@ -21,6 +21,9 @@ createApp({
             this.currentIndex = index
             this.showCard = true;
 
+        },
+        close() {
+            this.showCard = false
         }
     },
 
@@ -28,7 +31,6 @@ createApp({
         axios.get('./server.php').then(res => {
             this.albumsList = res.data;
 
-            console.log(this.albumsList)
         })
     },
 

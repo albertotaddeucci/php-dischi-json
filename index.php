@@ -17,6 +17,8 @@
 
     <link href="./style.css" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/e2fdc6941e.js" crossorigin="anonymous"></script>
+
 
 </head>
 
@@ -43,18 +45,22 @@
 
                 <div v-show="showCard == true" class="rounded-4 overlay text-center position-absolute top-50 start-50 translate-middle">
 
-                    <div class="row w-100 h-100 align-items-center px-5 row-cols-1 row-cols-lg-3 gap-3">
+                    <div class="row w-100 h-100 align-items-center px-5 row-cols-1 row-cols-lg-3 gap-3 position-relative">
                         <div class="col">
                             <img :src=" albumInfo.poster">
 
 
                         </div>
-                        <div class="col flex-grow-1 ">
+                        <div class="col flex-grow-1  ">
 
                             <h4 class="card-title pb-3 fs-1 ">{{albumInfo.title}}</h4>
                             <div><strong>Author:</strong> {{albumInfo.author}}</div>
                             <div><strong>Year:</strong> {{albumInfo.year}}</div>
                             <div><strong>Genre:</strong> {{albumInfo.genre}}</div>
+
+
+                            <div @click="close" class="btn btn-outline-dark mt-3"><i class="fa-solid fa-xmark me-2"></i>Close</div>
+
 
                         </div>
 
