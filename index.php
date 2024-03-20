@@ -22,9 +22,9 @@
     <div id="app">
         <h1>Dischi</h1>
 
-        <p>
-
-        </p>
+        <ul>
+            <li v-for="album in albumsList">{{album.title}}</li>
+        </ul>
 
     </div>
 
