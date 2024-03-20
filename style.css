@@ -26,17 +26,19 @@
 
 
 .overlay {
+    padding-block: 50px;
     width: 80%;
-    height: 50%;
+    /* height: 50%; */
 
     background-color: #76abaef8;
     font-size: 1.5em;
     color: black;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 
 
-.overlay .col-auto img {
-    width: 300px;
+.overlay .col img {
+    width: 100%;
     object-fit: contain;
 }

@@ -43,13 +43,13 @@
 
                 <div v-show="showCard == true" class="rounded-4 overlay text-center position-absolute top-50 start-50 translate-middle">
 
-                    <div class="row w-100 h-100 align-items-center px-5 ">
-                        <div class="col-auto">
+                    <div class="row w-100 h-100 align-items-center px-5 row-cols-1 row-cols-lg-3 gap-3">
+                        <div class="col">
                             <img :src=" albumInfo.poster">
 
 
                         </div>
-                        <div class="col-auto flex-grow-1 ">
+                        <div class="col flex-grow-1 ">
 
                             <h4 class="card-title pb-3 fs-1 ">{{albumInfo.title}}</h4>
                             <div><strong>Author:</strong> {{albumInfo.author}}</div>
