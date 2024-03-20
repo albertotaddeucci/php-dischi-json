@@ -15,8 +15,10 @@
     <!-- axios -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- my style -->
     <link href="./style.css" rel="stylesheet">
 
+    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/e2fdc6941e.js" crossorigin="anonymous"></script>
 
 
@@ -36,10 +38,10 @@
         <div class="container pt-5">
 
 
-            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 gx-3 gy-3 position-relative ">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 gx-4 gy-4 position-relative ">
 
-                <div @click="getInfo(index)" v-for="album,index in albumsList" class="my_card col cursor">
-                    <img :src=" album.poster">
+                <div @click="getInfo(index)" v-for="album,index in albumsList" class="my_card col cursor ">
+                    <img :src=" album.poster" class="rounded-3">
 
                 </div>
 

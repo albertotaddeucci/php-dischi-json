@@ -1,44 +1,44 @@
 [
     {
-        "title": "New Jersey",
-        "author": "Bon Jovi",
-        "year": 1988,
-        "poster": "https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg",
+        "title": "In rainbows",
+        "author": "Radiohead",
+        "year": 2007,
+        "poster": "https://encorerecords.ca/cdn/shop/products/13c9f9760f2ca1ce21f778d7fc260302.jpg?v=1571439422",
+        "genre": "Indie"
+    },
+    {
+        "title": "The rise and fall of Ziggy Stardust and the spiders form Mars",
+        "author": "David Bowie",
+        "year": 1972,
+        "poster": "https://m.media-amazon.com/images/I/81YLSzm09SL._UF1000,1000_QL80_.jpg",
         "genre": "Rock"
     },
     {
-        "title": "Live at Wembley 86",
-        "author": "Queen",
-        "year": 1992,
-        "poster": "https://images-na.ssl-images-amazon.com/images/I/71g40mlbinL._SX355_.jpg",
-        "genre": "Pop"
+        "title": "Unknown Pleasures",
+        "author": "Joy Division",
+        "year": 1979,
+        "poster": "https://audioeclectica.files.wordpress.com/2022/03/image-3.png",
+        "genre": "Post-punk"
     },
     {
-        "title": "Ten\"s Summoner\"s Tales",
-        "author": "Sting",
+        "title": "Rumors",
+        "author": "Fleetwood Mac",
+        "year": 1977,
+        "poster": "https://m.media-amazon.com/images/I/71ul3u8SbjL._UF1000,1000_QL80_.jpg",
+        "genre": "Rock"
+    },
+    {
+        "title": "In the airplane over the sea",
+        "author": "Neutral Milk Hotel",
+        "year": 1998,
+        "poster": "https://m.media-amazon.com/images/I/81bCY4xIiuL._UF1000,1000_QL80_.jpg",
+        "genre": "Indie Rock"
+    },
+    {
+        "title": "Vs.",
+        "author": "Pearl Jam",
         "year": 1993,
-        "poster": "https://images-na.ssl-images-amazon.com/images/I/411BQR6BHRL.jpg",
-        "genre": "Pop"
-    },
-    {
-        "title": "Steve Gadd band",
-        "author": "Steve Gadd Band",
-        "year": 2018,
-        "poster": "https://m.media-amazon.com/images/I/81UtLzBDoEL._SS500_.jpg",
-        "genre": "Jazz"
-    },
-    {
-        "title": "Brave new World",
-        "author": "Iron Maiden",
-        "year": 2000,
-        "poster": "https://upload.wikimedia.org/wikipedia/en/0/03/Iron_Maiden_-_Brave_New_World.jpg",
-        "genre": "Metal"
-    },
-    {
-        "title": "One more car, one more rider",
-        "author": "Eric Clapton",
-        "year": 2002,
-        "poster": "https://images-na.ssl-images-amazon.com/images/I/81MDAIdh78L._SY355_.jpg",
+        "poster": "https://www.virginradio.it/upload/vs_pj-1603095340595.jpg",
         "genre": "Rock"
     }
 ]
