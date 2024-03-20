@@ -26,17 +26,22 @@
 
             <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
 
-                <div v-for="album in albumsList" class="card col">
-                    <img :src=" album.poster" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">{{album.title}}</h5>
-                        <div>Author: <span>{{album.author}}</span></div>
-                        <div>Year: <span>{{album.year}}</span></div>
-                        <div>Genre: <span>{{album.genre}}</span></div>
+                <div @click="getInfo(index)" v-for="album,index in albumsList" class="card col">
+                    <img :src=" album.poster" class="card-img-top p-3" alt="...">
+                    <div class="card-body text-center ">
+                        <h4 class="card-title pb-3">{{album.title}}</h4>
+
 
                     </div>
                 </div>
 
+                <div v-show="showCard == true">
+
+                    <div>Author: {{albumInfo.author}}</div>
+                    <div>Year: {{albumInfo.year}}</div>
+                    <div>Genre: {{albumInfo.genre}}</div>
+
+                </div>
 
             </div>
 
